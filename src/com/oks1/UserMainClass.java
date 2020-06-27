@@ -2,7 +2,6 @@ package com.oks1;
 
 import java.util.*;
 
-
 public class UserMainClass {
     String name;
     int age;
@@ -54,9 +53,5 @@ public class UserMainClass {
         System.out.println("\nIteration Map by KEY:\n" + map.GetIterationMap(map1,TypeMap.key)); // 1.итерация по ключам: <ключ>: <значение>
         System.out.println("Iteration Map by VALUE:\n" + map.GetIterationMap(map1,TypeMap.value) + "\n"); // 2.итерация по значениям: <значение>
         //System.out.println("Iteration Map by PAIRS:\n" + map.GetIterationMap(map1,TypeMap.key, map1) + ":" + map.GetIterationMap(map1,TypeMap.value, map1)); // 3.итерация по парам: <ключ>: <значение>
-
-
-
-
     }
 }

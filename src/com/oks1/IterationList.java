@@ -13,7 +13,6 @@ public class IterationList <E> {
             E element = iterator.next();
             if (type1 == "list") result.append(
                     System.out.printf("Result is index <%d> : value <%d>\n", num, element));
-
         }
         return result.toString();
     }

@@ -20,7 +20,6 @@ public class IterationMap <K, V> {
         /*for (Map.Entry<Integer, String> entry : map1.entrySet()) {
             System.out.println(entry.getKey() + entry.getValue());
         }*/
-
         return result.toString();
     }
 }
