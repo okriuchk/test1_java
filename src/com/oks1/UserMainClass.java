@@ -33,7 +33,7 @@ public class UserMainClass {
         //после результатов в консоли повторяется 'java.io.PrintStream@7c3df479'. вроде дело в кодировке, но не смогла разобраться
 
         //итерация по HashSet с несколькими элементами с выводом на консоль информации в виде: <элемент>
-        Set <Integer> testSet = new HashSet <>(Arrays.asList(11, 33, 55, 44, 33, 4));
+        Set <Integer> testSet = new HashSet <>(Arrays.asList(12, 33, 55, 44, 33, 4));
         IterationSet <Integer> SET = new IterationSet <>();
         System.out.println("\nIteration Set:");
         System.out.println(SET.GetIterationSet(testSet.iterator()));
