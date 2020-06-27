@@ -3,7 +3,7 @@ package com.oks1;
 import java.util.Iterator;
 
 public class IterationSet <E> {
-    public String GetIterationSet(Iterator<E> iterator) {
+    public String getIterationSet(Iterator<E> iterator) {
         int num = -1;
         StringBuilder result = new StringBuilder();
         String type1 = "set";

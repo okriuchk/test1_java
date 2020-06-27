@@ -3,8 +3,8 @@ package com.oks1;
 import java.util.*;
 
 public class UserMainClass {
-    String name;
-    int age;
+    private String name;
+    private int age;
 
     public static void main(String[] args) {
 
@@ -28,14 +28,14 @@ public class UserMainClass {
         List <Integer> testList = new ArrayList <>(Arrays.asList(1,3,3,4,4));
         IterationList <Integer> LIST = new IterationList <>();
         System.out.println("Iteration List:");
-        System.out.println(LIST.GetIterationList(testList.iterator()));
+        System.out.println(LIST.getIterationList(testList.iterator()));
         //после результатов в консоли повторяется 'java.io.PrintStream@7c3df479'. вроде дело в кодировке, но не смогла разобраться
 
         //итерация по HashSet с несколькими элементами с выводом на консоль информации в виде: <элемент>
         Set <Integer> testSet = new HashSet <>(Arrays.asList(12, 33, 55, 44, 33, 4));
         IterationSet <Integer> SET = new IterationSet <>();
         System.out.println("\nIteration Set:");
-        System.out.println(SET.GetIterationSet(testSet.iterator()));
+        System.out.println(SET.getIterationSet(testSet.iterator()));
         //после результатов в консоли повторяется 'java.io.PrintStream@7c3df479'. вроде дело в кодировке, но не смогла разобраться
 
         // итерация по HashMap с несколькими элементами с выводом на консоль информации в виде:
@@ -50,8 +50,8 @@ public class UserMainClass {
         map1.put(101,"Алекс");
 
         IterationMap <Integer, String> map = new IterationMap <>();
-        System.out.println("\nIteration Map by KEY:\n" + map.GetIterationMap(map1,TypeMap.key)); // 1.итерация по ключам: <ключ>: <значение>
-        System.out.println("Iteration Map by VALUE:\n" + map.GetIterationMap(map1,TypeMap.value) + "\n"); // 2.итерация по значениям: <значение>
-        //System.out.println("Iteration Map by PAIRS:\n" + map.GetIterationMap(map1,TypeMap.key, map1) + ":" + map.GetIterationMap(map1,TypeMap.value, map1)); // 3.итерация по парам: <ключ>: <значение>
+        System.out.println("\nIteration Map by KEY:\n" + map.getIterationMap(map1,TypeMap.key)); // 1.итерация по ключам: <ключ>: <значение>
+        System.out.println("Iteration Map by VALUE:\n" + map.getIterationMap(map1,TypeMap.value) + "\n"); // 2.итерация по значениям: <значение>
+        //System.out.println("Iteration Map by PAIRS:\n" + map.getIterationMap(map1,TypeMap.key) + ":" + map.getIterationMap(map1,TypeMap.value)); // 3.итерация по парам: <ключ>: <значение>
     }
 }

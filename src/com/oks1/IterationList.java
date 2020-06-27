@@ -3,7 +3,7 @@ package com.oks1;
 import java.util.Iterator;
 
 public class IterationList <E> {
-    public String GetIterationList(Iterator<E> iterator) {
+    public String getIterationList(Iterator<E> iterator) {
         int num = -1;
         StringBuilder result = new StringBuilder();
         String type1 = "list";

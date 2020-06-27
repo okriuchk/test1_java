@@ -3,7 +3,7 @@ package com.oks1;
 import java.util.Map;
 
 public class IterationMap <K, V> {
-    public String GetIterationMap(Map<Integer, String> mapCollect, TypeMap type_Map) {
+    public String getIterationMap(Map<Integer, String> mapCollect, TypeMap type_Map) {
         StringBuilder result = new StringBuilder();
 
         if (type_Map == TypeMap.value) {
